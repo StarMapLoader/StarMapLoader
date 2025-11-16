@@ -50,7 +50,6 @@ nav:
       - Reverse Engineering Notes: advanced-internals/reverse-engineering.md
       - Save File Structure: advanced-internals/save-file-structure.md
   - Troubleshooting:
-      - Common Errors: troubleshooting/common-errors.md
       - Logs and Debugging: troubleshooting/logs-and-debugging.md
   - Meta:
       - Documentation Style Guide: meta/style-guide.md
