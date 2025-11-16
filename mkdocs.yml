@@ -30,7 +30,7 @@ nav:
       - Overview: getting-started/overview.md
       - Installing Tools: getting-started/install-tools.md
       - Installing Mods (StarMap): getting-started/installing-mods.md
-      - Modding Etiquette: modding-etiquette.md
+      - Modding Etiquette: getting-started/modding-etiquette.md
   - Fundamentals:
       - Directories and Files: fundamentals/directories-and-files.md
       - Data Formats Overview: fundamentals/data-formats-overview.md
