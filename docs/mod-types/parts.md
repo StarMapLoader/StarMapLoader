@@ -5,7 +5,6 @@ This guide explains how to add custom 3D models as vehicles/parts in Kitten Spac
 
 ## Requirements
 - Blender (for 3D model preparation)
-- Python with PIL/Pillow (for texture creation)
 - Text editor for XML editing
 - Your 3D model in a format Blender can import (FBX, OBJ, etc.)
 
