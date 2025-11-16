@@ -2302,8 +2302,12 @@
 <h3 id="21-required-texture-types">2.1 Required Texture Types<a class="headerlink" href="#21-required-texture-types" title="Permanent link">&para;</a></h3>
 <p>KSA uses PBR (Physically Based Rendering) materials with 3 texture types:</p>
 <ol>
-<li><strong>Diffuse</strong> (Base Color/Albedo) - Required</li>
-<li>The main color/texture map</li>
+<li>
+<p><strong>Diffuse</strong> (Base Color/Albedo) - Required</p>
+</li>
+<li>
+<p>The main color/texture map</p>
+</li>
 <li>Format: PNG or DDS</li>
 <li>
 <p>RGB channels</p>
@@ -2311,7 +2315,9 @@
 <li>
 <p><strong>Normal</strong> (Tangent Space) - Required</p>
 </li>
-<li>Height/bump information</li>
+<li>
+<p>Height/bump information</p>
+</li>
 <li>Format: PNG or DDS</li>
 <li>
 <p>RGB: (128, 128, 255) = flat normal (no bumps)</p>
@@ -2319,7 +2325,9 @@
 <li>
 <p><strong>RoughMetalAo</strong> - Required</p>
 </li>
-<li>Combined texture with 3 properties:</li>
+<li>
+<p>Combined texture with 3 properties:</p>
+</li>
 <li>Red channel: Roughness (0=smooth, 255=rough)</li>
 <li>Green channel: Metallic (0=non-metal, 255=metal)</li>
 <li>Blue channel: Ambient Occlusion (shadows)</li>
@@ -2327,15 +2335,19 @@
 </ol>
 <h3 id="22-create-placeholder-textures">2.2 Create Placeholder Textures<a class="headerlink" href="#22-create-placeholder-textures" title="Permanent link">&para;</a></h3>
 <p>If you don't have normal or RoughMetalAo textures, you need to create placeholder ones.</p>
-<p><strong>Flat Normal Map:</strong>
-- Create a 512x512 PNG image filled with RGB color (128, 128, 255) - this is a flat blue color that represents no bumps
-- Save as <code>your_model_normal.png</code></p>
-<p><strong>Neutral RoughMetalAo Map:</strong>
-- Create a 512x512 PNG image filled with RGB color (128, 0, 255)
-- Red channel (128) = medium roughness
-- Green channel (0) = not metallic
-- Blue channel (255) = full ambient occlusion
-- Save as <code>your_model_roughmetalao.png</code></p>
+<p><strong>Flat Normal Map:</strong></p>
+<ul>
+<li>Create a 512x512 PNG image filled with RGB color (128, 128, 255) - this is a flat blue color that represents no bumps</li>
+<li>Save as <code>your_model_normal.png</code></li>
+</ul>
+<p><strong>Neutral RoughMetalAo Map:</strong></p>
+<ul>
+<li>Create a 512x512 PNG image filled with RGB color (128, 0, 255)</li>
+<li>Red channel (128) = medium roughness</li>
+<li>Green channel (0) = not metallic</li>
+<li>Blue channel (255) = full ambient occlusion</li>
+<li>Save as <code>your_model_roughmetalao.png</code></li>
+</ul>
 <p>You can create these in Photoshop, GIMP, or any image editor.</p>
 <h3 id="23-copy-textures-to-game">2.3 Copy Textures to Game<a class="headerlink" href="#23-copy-textures-to-game" title="Permanent link">&para;</a></h3>
 <p>Copy all texture files (diffuse, normal, and RoughMetalAo) to:</p>
@@ -2437,18 +2449,24 @@
 <span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
 <span class="nt">&lt;/Part&gt;</span>
 </code></pre></div>
-<p><strong>Thruster Coordinate System:</strong>
-- X = Forward/Back (+X forward, -X back)
-- Y = Left/Right (+Y right, -Y left)
-- Z = Up/Down (+Z up, -Z down)</p>
-<p><strong>ExhaustDirection:</strong> Points opposite to thrust direction
-- To thrust forward: ExhaustDirection X="-1.0"
-- To thrust back: ExhaustDirection X="1.0"
-- To thrust up: ExhaustDirection Z="-1.0"
-- To thrust down: ExhaustDirection Z="1.0"</p>
-<p><strong>Control Maps Available:</strong>
-- Rotation: <code>YawLeft</code>, <code>YawRight</code>, <code>PitchUp</code>, <code>PitchDown</code>, <code>RollLeft</code>, <code>RollRight</code>
-- Translation: <code>TranslateForward</code>, <code>TranslateBack</code>, <code>TranslateLeft</code>, <code>TranslateRight</code>, <code>TranslateUp</code>, <code>TranslateDown</code></p>
+<p><strong>Thruster Coordinate System:</strong></p>
+<ul>
+<li>X = Forward/Back (+X forward, -X back)</li>
+<li>Y = Left/Right (+Y right, -Y left)</li>
+<li>Z = Up/Down (+Z up, -Z down)</li>
+</ul>
+<p><strong>ExhaustDirection:</strong> Points opposite to thrust direction</p>
+<ul>
+<li>To thrust forward: ExhaustDirection X="-1.0"</li>
+<li>To thrust back: ExhaustDirection X="1.0"</li>
+<li>To thrust up: ExhaustDirection Z="-1.0"</li>
+<li>To thrust down: ExhaustDirection Z="1.0"</li>
+</ul>
+<p><strong>Control Maps Available:</strong></p>
+<ul>
+<li>Rotation: <code>YawLeft</code>, <code>YawRight</code>, <code>PitchUp</code>, <code>PitchDown</code>, <code>RollLeft</code>, <code>RollRight</code></li>
+<li>Translation: <code>TranslateForward</code>, <code>TranslateBack</code>, <code>TranslateLeft</code>, <code>TranslateRight</code>, <code>TranslateUp</code>, <code>TranslateDown</code></li>
+</ul>
 <h2 id="step-7-create-vehicle-definition">Step 7: Create Vehicle Definition<a class="headerlink" href="#step-7-create-vehicle-definition" title="Permanent link">&para;</a></h2>
 <p>Edit <code>Astronomicals.xml</code> (find similar vehicle definitions as reference):</p>
 <h3 id="single-part-vehicle">Single-Part Vehicle<a class="headerlink" href="#single-part-vehicle" title="Permanent link">&para;</a></h3>
@@ -2537,7 +2555,6 @@
 </ul>
 <h3 id="rcs-not-working">RCS Not Working<a class="headerlink" href="#rcs-not-working" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>RCS not enabled</strong>: Press N key in-game to toggle RCS</li>
 <li><strong>Wrong exhaust directions</strong>: Check ExhaustDirection vectors are correct</li>
 <li><strong>Insufficient thrust</strong>: Increase <code>Thrust N="150"</code> value</li>
 <li><strong>No propellant</strong>: Check <code>&lt;PropellantMass Kg="500" /&gt;</code> is set</li>
