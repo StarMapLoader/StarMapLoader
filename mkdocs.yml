@@ -29,7 +29,7 @@ nav:
   - Getting Started:
       - Overview: getting-started/overview.md
       - Installing Tools: getting-started/install-tools.md
-      - Your First Mod: getting-started/first-mod.md
+      - Installing Mods (StarMap): getting-started/installing-mods.md
   - Fundamentals:
       - Directories and Files: fundamentals/directories-and-files.md
       - Data Formats Overview: fundamentals/data-formats-overview.md

@@ -20,8 +20,7 @@ Currently the most popular way to create mods is by using [StarMap](https://gith
 
 ---
 
-Before starting this guide it is recommended to set up the example mod and running it to verify StarMap is working. You can find a guide [here](https://github.com/StarMapLoader/StarMap/wiki/Modding#example-mods-and-tutorial-on-how-to-mod) and an example mod [here](https://github.com/StarMapLoader/StarMap-ExampleMods/blob/main/StarMap.SimpleMod/SimpleMod.cs)
-<!-- TODO: add custom mod install tutorial -->
+Before starting this guide it is recommended to set up the example mod and running it to verify StarMap is working. You can find a guide [here](/KSAModding/getting-started/installing-mods/) and an example mod [here](https://github.com/StarMapLoader/StarMap-ExampleMods/releases/tag/0.1.4)
 
 ### Creating the Visual Studio project
 1. Create a new visual studio project by pressing `Create a new project`.
@@ -178,4 +177,4 @@ If you did all steps correctly simply right clicking the project and selecting `
 ---
 
 The compiled files will now be in the following directory: `projectdir\FirstMod\bin\Debug\net9.0`.
-Now follow the [installation guide](https://github.com/StarMapLoader/StarMap/wiki/Modding#example-mods-and-tutorial-on-how-to-mod) to test your brand new mod. If you did all the steps correctly you should see `Hello World!` in the console output of StarMap.exe.
+Now follow the [installation guide](/KSAModding/getting-started/installing-mods/) to test your brand new mod. If you did all the steps correctly you should see `Hello World!` in the console output of StarMap.exe.
