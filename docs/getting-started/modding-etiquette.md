@@ -7,12 +7,12 @@ NOTE: Standards will change as time goes on to better serve the modding communit
 
 All mods should follow similar standards with the format in creation to help improve compatibility.
 
-- Concerning `Core\`
-  - KSA itself is structured as a mod for the BRUTAL framework. As such the game itself is stored the exact same way as a mod would be.
-  - When modding it is bad practice to directly modify Core\
-    - Directly modifying the game files not only hurts compatibility with other mods, it also means that you may have to reinstall KSA to get original functionality back.
-    - Directly modifying core will not allow you to use tools such as StarMap and KSA Mod Loader.
-    - Instead, create your own mod in `Content\` with its own mod.toml and files.
+  - Concerning `Core\`
+    - KSA itself is structured as a mod for the BRUTAL framework. As such the game itself is stored the exact same way as a mod would be.
+    - When modding it is bad practice to directly modify Core\
+      - Directly modifying the game files not only hurts compatibility with other mods, it also means that you may have to reinstall KSA to get original functionality back.
+      - Directly modifying core will not allow you to use tools such as StarMap and KSA Mod Loader.
+      - Instead, create your own mod in `Content\` with its own mod.toml and files.
   - Naming your Mod
     - When naming your mod, please follow standard program folder naming etiquette.
       - Do not name your mod `Core\`! Just don't do it!
