@@ -1909,11 +1909,12 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>IStarMapMod requires you to implement 3 functions</p>
+<p>IStarMapMod requires you to implement 3 functions and one member (There is currently a typo in StarMap: OnImmediateLoad should for now be written as OnImmediatLoad until the fix is accepted)</p>
 <ul>
 <li><code>public void OnImmediateLoad()</code></li>
 <li><code>public void OnFullyLoaded()</code></li>
 <li><code>public void Unload()</code></li>
+<li><code>public bool ImmediateUnload</code></li>
 </ul>
 <p>So lets do that next</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">StarMap.API</span><span class="p">;</span>
@@ -1922,6 +1923,7 @@
 <span class="p">{</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">FirstMod</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IStarMapMod</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ImmediateUnload</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
 <span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnImmediateLoad</span><span class="p">()</span>
 <span class="w">        </span><span class="p">{</span>
 
