@@ -523,6 +523,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Formats Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -539,6 +557,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-files-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Files (XML)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-models-glb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D Models (GLB)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textures-pngdds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Textures (PNG/DDS)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1374,6 +1477,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-files-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Files (XML)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-models-glb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D Models (GLB)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#textures-pngdds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Textures (PNG/DDS)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1393,20 +1570,65 @@
 
 
 <h1 id="data-formats-overview">Data Formats Overview<a class="headerlink" href="#data-formats-overview" title="Permanent link">&para;</a></h1>
-<p>KSA uses various file formats for configuration, assets, and state.</p>
-<p>Common categories include (but are not limited to):</p>
+<p>KSA uses several file formats for configuration, assets, and game state.</p>
+<h2 id="configuration-files-xml">Configuration Files (XML)<a class="headerlink" href="#configuration-files-xml" title="Permanent link">&para;</a></h2>
+<p>KSA uses XML extensively for defining parts, vehicles, celestial bodies, and systems.</p>
+<p><strong>File Examples:</strong></p>
 <ul>
-<li><strong>Config files</strong> – human-readable formats such as JSON, YAML, or custom text formats.</li>
-<li><strong>Meshes and models</strong> – typically imported from DCC tools like Blender via supported formats.</li>
-<li><strong>Textures</strong> – standard image formats or engine-specific compressed textures.</li>
-<li><strong>Save files</strong> – persistent state data; may be more complex or binary.</li>
+<li><code>PartAssets.xml</code> - Mesh definitions, materials, and part specifications</li>
+<li><code>Astronomicals.xml</code> - Vehicles, celestial bodies, and orbital parameters</li>
+<li><code>EarthOnly.xml</code> / <code>SolSystem.xml</code> - Star system definitions</li>
+<li><code>Settings.xml</code> - Game settings and preferences</li>
 </ul>
-<p>As the game and modding tools evolve, this page should be updated with:</p>
+<p><strong>Example Structure:</strong>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Part</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;SubPart</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourSubPart&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SubPartModel</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourModel&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Mesh</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourMesh&quot;</span><span class="nt">/&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Material</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;YourMaterial&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/SubPartModel&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/SubPart&gt;</span>
+<span class="nt">&lt;/Part&gt;</span>
+</code></pre></div></p>
+<h2 id="3d-models-glb">3D Models (GLB)<a class="headerlink" href="#3d-models-glb" title="Permanent link">&para;</a></h2>
+<p>KSA uses <strong>GLB</strong> (GLTF 2.0 binary) format for all 3D meshes.</p>
+<p><strong>Required Vertex Attributes:</strong></p>
 <ul>
-<li>Exact file extensions</li>
-<li>Example snippets</li>
-<li>Notes about versioning and compatibility</li>
+<li><code>POSITION</code> - 3D coordinates</li>
+<li><code>NORMAL</code> - Surface normals for lighting</li>
+<li><code>TEXCOORD_0</code> - UV coordinates for textures</li>
 </ul>
+<p><strong>Important Limitations:</strong></p>
+<ul>
+<li>KSA only renders the <strong>first primitive per mesh</strong></li>
+<li>Multi-part models must be split into separate GLB files</li>
+</ul>
+<h2 id="textures-pngdds">Textures (PNG/DDS)<a class="headerlink" href="#textures-pngdds" title="Permanent link">&para;</a></h2>
+<p>KSA uses <strong>PBR (Physically Based Rendering)</strong> materials with three texture types.</p>
+<p><strong>Required Textures:</strong></p>
+<ol>
+<li><strong>Diffuse</strong> (Base Color/Albedo)</li>
+<li><strong>Normal</strong> (Tangent Space)</li>
+<li><strong>RoughMetalAo</strong> (Combined PBR)</li>
+</ol>
+<p><strong>Important:</strong> All three textures MUST be present for each material, or the game will crash with <code>NullReferenceException</code>. Use placeholder textures if you don't have real ones.</p>
+<h2 id="save-files">Save Files<a class="headerlink" href="#save-files" title="Permanent link">&para;</a></h2>
+<p>Save files store game state, vehicle configurations, and orbital data.</p>
+<p><strong>Location:</strong> <code>Documents\My Games\Kitten Space Agency\Saves\</code></p>
+<h2 id="log-files">Log Files<a class="headerlink" href="#log-files" title="Permanent link">&para;</a></h2>
+<p>Logs provide debugging information and error messages.</p>
+<p><strong>Location:</strong> <code>Documents\My Games\Kitten Space Agency\Logs\</code></p>
+<p><strong>Files:</strong>
+- <code>Brutal.log</code> - Current session log
+- <code>Archives\Brutal.YYYYMMDD.HH.log</code> - Archived logs from previous sessions</p>
+<p><strong>Format:</strong> Plain text with timestamps</p>
+<p><strong>Common Errors:</strong>
+- <code>NullReferenceException</code> - Missing textures or invalid references
+- <code>XmlException</code> - Malformed XML syntax
+- <code>FileNotFoundException</code> - Missing mesh or texture files</p>
+<h2 id="audio-files">Audio Files<a class="headerlink" href="#audio-files" title="Permanent link">&para;</a></h2>
+<p>KSA uses audio files for sound effects and music.</p>
+<p><strong>Format:</strong> .OGG</p>
 
 
 
