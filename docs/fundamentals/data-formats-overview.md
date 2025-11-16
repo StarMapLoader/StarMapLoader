@@ -65,12 +65,14 @@ Logs provide debugging information and error messages.
 **Location:** `Documents\My Games\Kitten Space Agency\Logs\`
 
 **Files:**
+
 - `Brutal.log` - Current session log
 - `Archives\Brutal.YYYYMMDD.HH.log` - Archived logs from previous sessions
 
 **Format:** Plain text with timestamps
 
 **Common Errors:**
+
 - `NullReferenceException` - Missing textures or invalid references
 - `XmlException` - Malformed XML syntax
 - `FileNotFoundException` - Missing mesh or texture files
