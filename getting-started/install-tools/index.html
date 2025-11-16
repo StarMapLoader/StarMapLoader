@@ -442,10 +442,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nice-to-have-tools" class="md-nav__link">
+  <a href="#starmap-ksa-code-loader" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nice-to-have tools
+        StarMap (KSA Code Loader)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blender
       
     </span>
   </a>
@@ -1506,10 +1517,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nice-to-have-tools" class="md-nav__link">
+  <a href="#starmap-ksa-code-loader" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Nice-to-have tools
+        StarMap (KSA Code Loader)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blender
       
     </span>
   </a>
@@ -1544,14 +1566,27 @@
 <li>A <strong>file archiver/browser</strong> for inspecting game data if needed.</li>
 <li>The <strong>KSA game</strong> itself, installed in a location where you can access its files.</li>
 </ul>
-<h2 id="nice-to-have-tools">Nice-to-have tools<a class="headerlink" href="#nice-to-have-tools" title="Permanent link">&para;</a></h2>
-<p>Depending on what you're working on, you might want:</p>
+<h2 id="starmap-ksa-code-loader">StarMap (KSA Code Loader)<a class="headerlink" href="#starmap-ksa-code-loader" title="Permanent link">&para;</a></h2>
 <ul>
-<li>A <strong>3D modeling tool</strong> (e.g. Blender) for parts and environment assets.</li>
-<li>An <strong>image editor</strong> (e.g. GIMP, Krita, Photoshop) for textures.</li>
-<li>Diff/merge tools to compare config files across versions.</li>
+<li>Download and unzip release from <a href="https://github.com/StarMapLoader/StarMap/releases/latest">Releases</a>.</li>
+<li>Run StarMap.exe, this will fail and create a StarMapConfig.json.</li>
+<li>Open StarMapConfig.json and set the location of your KSA installation.<ul>
+<li><code>GameLocation</code> should be set to the location where Kitten Space Agency was installed, pointing directly to that folder (e.g. <code>C:\\games\\Kitten Space Agency\\</code>)</li>
+<li><code>RepositoryLocation</code> can be kept empty</li>
 </ul>
-<p>Later pages will provide more specific recommendations for each type of content.</p>
+</li>
+<li>Run StarMap.exe again, this should launch KSA and load your mods.</li>
+</ul>
+<h2 id="blender">Blender<a class="headerlink" href="#blender" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Go to the <a href="https://www.blender.org/download/">offical blender download website</a>.</li>
+<li>Download the installer for your OS (Windows, macOS, Linux)</li>
+<li>Run the installer:</li>
+<li>Windows: double-click .exe → follow prompts</li>
+<li>macOS: drag Blender.app to Applications</li>
+<li>Linux: extract tar.bz2 or use package manager</li>
+<li>Open Blender</li>
+</ol>
 
 
 
