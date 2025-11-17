@@ -1,5 +1,5 @@
 <sub><sup>Tested with: **KSA Version 2025.11.5.2819**</sup></sub>
-# struct KSA.FlightComputer
+# class KSA.FlightComputer
 > **Namespace:** `KSA`  
 > **Assembly:** `KSA.dll`
 
