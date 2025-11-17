@@ -3,13 +3,12 @@
 > **Namespace:** `KSA`  
 > **Assembly:** `KSA.dll`
 
-This is class is used to control a vessels Flight Computer.
+The FlightComputer class manages all automated and semi-automated control logic for a vessel.
+It is responsible for attitude control, burn planning and execution, manual & pulse-mode RCS control, and integrating navigation measurements to generate actuator outputs.
 
-Actions include but are not limited to:
-- Setting auto pilot modes
-- Setting custom heading
-- Executing burns
-- etc.
+A FlightComputer also tracks a vessel’s configuration (such as thruster authority, torque/force capability, and engine performance), allowing it to compute rotation rates, deadbands, flip times, and burn durations accurately.
+
+This class is typically owned by a Vehicle object and is updated once per simulation step.
 
 !!! warning "Documentation Incomplete"
     This documentation page is not finished yet. Some sections or method pages may still be missing.
