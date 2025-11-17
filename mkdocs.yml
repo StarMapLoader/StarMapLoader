@@ -39,6 +39,7 @@ nav:
       - Parts: modding-guides/parts.md
       - Planets: modding-guides/planet.md
       - System: modding-guides/system.md
+      - Star Binaries: modding-guides/star-binaries.md
       - Code:
         - First Steps: modding-guides/code/first-steps.md
   - Pipelines & Tools:
