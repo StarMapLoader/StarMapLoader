@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/advanced-internals/reverse-engineering/">
+        <link rel="canonical" href="https://ksamodding.github.io/KSAModding/advanced-internals/code-docs/KSA/FlightComputer/FlightComputer/">
       
       
-        <link rel="prev" href="../../pipelines-tools/tools-index/">
+        <link rel="prev" href="../../../Brutal/Numerics/bool2/CopyTo/">
       
       
-        <link rel="next" href="../code-docs/Brutal/Numerics/bool2/bool2/">
+        <link rel="next" href="../../../../../troubleshooting/logs-and-debugging/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Reverse Engineering Notes - KSA Modding Wiki (Unofficial)</title>
+        <title>Overview - KSA Modding Wiki (Unofficial)</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reverse-engineering" class="md-skip">
+        <a href="#struct-brutalnumericsbool2" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="KSA Modding Wiki (Unofficial)" class="md-header__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
+    <a href="../../../../.." title="KSA Modding Wiki (Unofficial)" class="md-header__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Reverse Engineering Notes
+              Overview
             
           </span>
         </div>
@@ -232,7 +232,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="KSA Modding Wiki (Unofficial)" class="md-nav__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
+    <a href="../../../../.." title="KSA Modding Wiki (Unofficial)" class="md-nav__button md-logo" aria-label="KSA Modding Wiki (Unofficial)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -262,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -341,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/overview/" class="md-nav__link">
+      <a href="../../../../../getting-started/overview/" class="md-nav__link">
         
   
   
@@ -369,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/install-tools/" class="md-nav__link">
+      <a href="../../../../../getting-started/install-tools/" class="md-nav__link">
         
   
   
@@ -397,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installing-mods/" class="md-nav__link">
+      <a href="../../../../../getting-started/installing-mods/" class="md-nav__link">
         
   
   
@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/modding-etiquette/" class="md-nav__link">
+      <a href="../../../../../getting-started/modding-etiquette/" class="md-nav__link">
         
   
   
@@ -512,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/directories-and-files/" class="md-nav__link">
+      <a href="../../../../../fundamentals/directories-and-files/" class="md-nav__link">
         
   
   
@@ -540,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/data-formats-overview/" class="md-nav__link">
+      <a href="../../../../../fundamentals/data-formats-overview/" class="md-nav__link">
         
   
   
@@ -568,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/coordinates-and-units/" class="md-nav__link">
+      <a href="../../../../../fundamentals/coordinates-and-units/" class="md-nav__link">
         
   
   
@@ -655,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/parts/" class="md-nav__link">
+      <a href="../../../../../modding-guides/parts/" class="md-nav__link">
         
   
   
@@ -683,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/planet/" class="md-nav__link">
+      <a href="../../../../../modding-guides/planet/" class="md-nav__link">
         
   
   
@@ -711,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/system/" class="md-nav__link">
+      <a href="../../../../../modding-guides/system/" class="md-nav__link">
         
   
   
@@ -788,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modding-guides/code/first-steps/" class="md-nav__link">
+      <a href="../../../../../modding-guides/code/first-steps/" class="md-nav__link">
         
   
   
@@ -883,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/modeling-pipeline/" class="md-nav__link">
+      <a href="../../../../../pipelines-tools/modeling-pipeline/" class="md-nav__link">
         
   
   
@@ -911,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/texture-pipeline/" class="md-nav__link">
+      <a href="../../../../../pipelines-tools/texture-pipeline/" class="md-nav__link">
         
   
   
@@ -939,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pipelines-tools/tools-index/" class="md-nav__link">
+      <a href="../../../../../pipelines-tools/tools-index/" class="md-nav__link">
         
   
   
@@ -1025,37 +1025,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Reverse Engineering Notes
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../reverse-engineering/" class="md-nav__link">
         
   
   
@@ -1071,37 +1044,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-ilspy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Using ILSpy
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1111,6 +1053,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1120,11 +1064,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -1145,7 +1089,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1310,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-docs/Brutal/Numerics/bool2/bool2/" class="md-nav__link">
+      <a href="../../../Brutal/Numerics/bool2/bool2/" class="md-nav__link">
         
   
   
@@ -1338,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-docs/Brutal/Numerics/bool2/CopyTo/" class="md-nav__link">
+      <a href="../../../Brutal/Numerics/bool2/CopyTo/" class="md-nav__link">
         
   
   
@@ -1387,6 +1331,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1396,11 +1342,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_2" id="__nav_6_2_2_label" tabindex="0">
@@ -1421,7 +1367,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1436,6 +1382,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1445,11 +1393,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_6_2_2_1" id="__nav_6_2_2_1_label" tabindex="0">
@@ -1470,7 +1418,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_2_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1485,10 +1433,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../code-docs/KSA/FlightComputer/FlightComputer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1504,6 +1479,264 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-example-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Example (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constructors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flightcomputer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FlightComputer()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flightcomputerflightcomputer-existing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FlightComputer(FlightComputer existing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Members
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modes-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes &amp; State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Burn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-state-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vehicle State &amp; Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcs-control-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCS Control State
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-pages-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Pages (Overview)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Pages (Overview)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving &amp; Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vehicle Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attitude-rotation-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attitude / Rotation Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burn-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Burn Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-computation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Computation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switching-line-guidance-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching Line &amp; Guidance Math
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interaction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burn-plan-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Burn Plan Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1599,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/logs-and-debugging/" class="md-nav__link">
+      <a href="../../../../../troubleshooting/logs-and-debugging/" class="md-nav__link">
         
   
   
@@ -1686,7 +1919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../meta/style-guide/" class="md-nav__link">
+      <a href="../../../../../meta/style-guide/" class="md-nav__link">
         
   
   
@@ -1714,7 +1947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../meta/versioning-policy/" class="md-nav__link">
+      <a href="../../../../../meta/versioning-policy/" class="md-nav__link">
         
   
   
@@ -1742,7 +1975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../meta/code-doc-guide/" class="md-nav__link">
+      <a href="../../../../../meta/code-doc-guide/" class="md-nav__link">
         
   
   
@@ -1797,10 +2030,237 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-ilspy" class="md-nav__link">
+  <a href="#code-example-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Using ILSpy
+        Code Example (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constructors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flightcomputer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FlightComputer()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flightcomputerflightcomputer-existing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FlightComputer(FlightComputer existing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Members
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modes-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes &amp; State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Burn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-state-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vehicle State &amp; Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcs-control-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCS Control State
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-pages-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Pages (Overview)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Pages (Overview)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving &amp; Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vehicle Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attitude-rotation-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attitude / Rotation Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burn-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Burn Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-computation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Computation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switching-line-guidance-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching Line &amp; Guidance Math
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interaction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#burn-plan-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Burn Plan Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operators
       
     </span>
   </a>
@@ -1827,23 +2287,174 @@
   
 
 
-<h1 id="reverse-engineering">Reverse Engineering<a class="headerlink" href="#reverse-engineering" title="Permanent link">&para;</a></h1>
-<p>For advanced modders who want to dig deeper into how KSA works internally.</p>
-<h2 id="using-ilspy">Using ILSpy<a class="headerlink" href="#using-ilspy" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/icsharpcode/ILSpy">ILSpy</a> is a free .NET decompiler. You can use it to browse KSA's code:</p>
-<ol>
-<li>Download ILSpy</li>
-<li>Open <code>KSA.dll</code> from <code>C:\Users\[YourName]\AppData\Local\Programs\Kitten Space Agency\</code></li>
-<li>Browse the code to see how things work</li>
-</ol>
-<p>This lets you find:</p>
+<p><sub><sup>Tested with: <strong>KSA Version 2025.11.5.2819</strong></sup></sub></p>
+<h1 id="struct-brutalnumericsbool2">struct Brutal.Numerics.bool2<a class="headerlink" href="#struct-brutalnumericsbool2" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Namespace:</strong> <code>KSA</code><br />
+<strong>Assembly:</strong> <code>KSA.dll</code></p>
+</blockquote>
+<p>This is class is used to control a vessels Flight Computer.</p>
+<p>Actions include but are not limited to:
+- Setting auto pilot modes
+- Setting custom heading
+- Executing burns
+- etc.</p>
+<div class="admonition warning">
+<p class="admonition-title">Documentation Incomplete</p>
+<p>This documentation page is not finished yet. Some sections or method pages may still be missing.</p>
+<p>Here is a complete <strong>Overview page</strong> you can paste directly after your existing header.</p>
+</div>
+<p>I follow your documentation style guide and keep it neutral, descriptive, and consistent with bool2-style overview pages.</p>
+<p>You already have:</p>
+<div class="highlight"><pre><span></span><code>&lt;sub&gt;&lt;sup&gt;Tested with: **KSA Version 2025.11.5.2819**&lt;/sup&gt;&lt;/sub&gt;
+# class KSA.FlightComputer
+&gt; **Namespace:** `KSA`  
+&gt; **Assembly:** `KSA.dll`
+
+The `FlightComputer` class manages all automated and semi-automated control logic for a vessel.
+It is responsible for *attitude control*, *burn planning and execution*, *manual &amp; pulse-mode RCS control*, and integrating navigation measurements to generate actuator outputs.
+
+A `FlightComputer` also tracks a vessel’s configuration (such as thruster authority, torque/force capability, and engine performance), allowing it to compute rotation rates, deadbands, flip times, and burn durations accurately.
+
+This class is typically owned by a `Vehicle` object and is updated once per simulation step.
+
+!!! warning &quot;Documentation Incomplete&quot;
+    This documentation page is not finished yet. Some sections or method pages may still be missing.
+</code></pre></div>
+<h2 id="code-example-optional">Code Example (Optional)<a class="headerlink" href="#code-example-optional" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// Accessing a vessel’s flight computer</span>
+<span class="kt">var</span><span class="w"> </span><span class="n">fc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">activeVessel</span><span class="p">.</span><span class="n">FlightComputer</span><span class="p">;</span>
+
+<span class="c1">// Switch to auto attitude mode and track prograde</span>
+<span class="n">fc</span><span class="p">.</span><span class="n">TrackTarget</span><span class="p">(</span><span class="n">FlightComputerAttitudeTrackTarget</span><span class="p">.</span><span class="n">Prograde</span><span class="p">);</span>
+
+<span class="c1">// Set burn mode to auto</span>
+<span class="n">fc</span><span class="p">.</span><span class="n">ToggleBurnMode</span><span class="p">();</span>
+
+<span class="c1">// Update the control output</span>
+<span class="n">fc</span><span class="p">.</span><span class="n">ComputeControl</span><span class="p">(</span><span class="k">ref</span><span class="w"> </span><span class="n">nav</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">inputs</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">outputs</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
+<h3 id="flightcomputer"><code>FlightComputer()</code><a class="headerlink" href="#flightcomputer" title="Permanent link">&para;</a></h3>
+<p>Creates a new instance with default values and an empty <code>BurnPlan</code>.</p>
+<h3 id="flightcomputerflightcomputer-existing"><code>FlightComputer(FlightComputer existing)</code><a class="headerlink" href="#flightcomputerflightcomputer-existing" title="Permanent link">&para;</a></h3>
+<p>Creates a deep copy of an existing flight computer, cloning:</p>
 <ul>
-<li>What XML attributes are actually supported</li>
-<li>Internal class structures</li>
-<li>How vehicles and parts are loaded</li>
-<li>Available properties and methods</li>
+<li>Burn and attitude modes</li>
+<li>Target and deadband values</li>
+<li>Rates, masses, configuration</li>
+<li>Burn plan</li>
+<li>Vehicle configuration info</li>
 </ul>
-<p><strong>Other tools:</strong> dnSpy (debugger + decompiler), dotPeek, Process Monitor</p>
+<hr />
+<h2 id="public-members">Public Members<a class="headerlink" href="#public-members" title="Permanent link">&para;</a></h2>
+<h3 id="modes-state">Modes &amp; State<a class="headerlink" href="#modes-state" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>FlightComputerBurnMode BurnMode</code></li>
+<li><code>FlightComputerAttitudeMode AttitudeMode</code></li>
+<li><code>VehicleReferenceFrame AttitudeFrame</code></li>
+<li><code>FlightComputerAttitudeTrackTarget AttitudeTrackTarget</code></li>
+<li><code>double3 CustomAttitudeTarget</code></li>
+</ul>
+<h3 id="control-parameters">Control Parameters<a class="headerlink" href="#control-parameters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>float AngleDeadband</code></li>
+<li><code>float RateLimit</code></li>
+<li><code>FlightComputerRollMode RollMode</code></li>
+<li><code>AttitudeTarget AttitudeTarget</code></li>
+<li><code>DeadbandState[] DeadbandStates</code></li>
+</ul>
+<h3 id="burn">Burn<a class="headerlink" href="#burn" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>BurnTarget? Burn</code></li>
+<li><code>BurnPlan BurnPlan { get; }</code></li>
+</ul>
+<h3 id="vehicle-state-configuration">Vehicle State &amp; Configuration<a class="headerlink" href="#vehicle-state-configuration" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>float3 Pmi</code></li>
+<li><code>float InertMass</code></li>
+<li><code>float PropellantMass</code></li>
+<li><code>float TotalMass</code> <em>(calculated)</em></li>
+<li><code>float TotalAcceleration</code></li>
+<li><code>VehicleConfigInfo VehicleConfig { get; private set; }</code></li>
+</ul>
+<h3 id="rcs-control-state">RCS Control State<a class="headerlink" href="#rcs-control-state" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>SimTime LastThrusterPulseTime</code></li>
+<li><code>float3 RcsTorqueAuthority</code></li>
+<li><code>float3 AngleTurnaround</code></li>
+<li><code>float3 RateDeadband</code></li>
+<li><code>float3 ErrorAngles</code></li>
+<li><code>float3 ErrorRates</code></li>
+<li><code>float ConservativeFlipTime</code></li>
+<li><code>float DetumbleRateLimit</code></li>
+</ul>
+<h2 id="method-pages-overview">Method Pages (Overview)<a class="headerlink" href="#method-pages-overview" title="Permanent link">&para;</a></h2>
+<p>The following methods have dedicated pages:</p>
+<h3 id="saving-loading">Saving &amp; Loading<a class="headerlink" href="#saving-loading" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>DeserializeSave(...)</code></li>
+<li><code>SerializeSave()</code></li>
+</ul>
+<h3 id="vehicle-configuration">Vehicle Configuration<a class="headerlink" href="#vehicle-configuration" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>ReadUpdatedVehicleConfiguration(...)</code></li>
+</ul>
+<h3 id="attitude-rotation-control">Attitude / Rotation Control<a class="headerlink" href="#attitude-rotation-control" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>SetNullRot(...)</code></li>
+<li><code>SetInertialNullRot()</code></li>
+<li><code>UpdateAttitudeError(...)</code></li>
+<li><code>UpdateAttitudeRateError(...)</code></li>
+<li><code>UpdateAttitudeTrackError(...)</code></li>
+</ul>
+<h3 id="burn-control">Burn Control<a class="headerlink" href="#burn-control" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>ComputeBurnControl(...)</code></li>
+<li><code>UpdateBurnTarget(...)</code></li>
+<li><code>LoadBurn(...)</code></li>
+<li><code>UnloadBurn()</code></li>
+<li><code>UpdateBurn(...)</code></li>
+</ul>
+<h3 id="control-computation">Control Computation<a class="headerlink" href="#control-computation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>ComputeControl(...)</code></li>
+<li><code>ComputeRcsPulseControl(...)</code></li>
+<li><code>ComputeRcsRateControl(...)</code></li>
+<li><code>ComputeRcsTrackControl(...)</code></li>
+<li><code>SelectJetsToFire(...)</code></li>
+</ul>
+<h3 id="switching-line-guidance-math">Switching Line &amp; Guidance Math<a class="headerlink" href="#switching-line-guidance-math" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>EvaluateParabolicPhaseLine(...)</code></li>
+<li><code>EvaluateParabolicPhaseLineInverse(...)</code></li>
+<li><code>EvaluateTargetLine(...)</code></li>
+<li><code>EvaluateLowerSwitchingLine(...)</code></li>
+<li><code>EvaluateUpperSwitchingLine(...)</code></li>
+<li><code>EvaluateSwitchingLine(...)</code></li>
+<li><code>EvaluateSwitchingLineViolationAngle(...)</code></li>
+</ul>
+<h3 id="user-interaction">User Interaction<a class="headerlink" href="#user-interaction" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>TrackTarget(...)</code></li>
+<li><code>RateHold(...)</code></li>
+<li><code>IsTrackingTarget(...)</code></li>
+<li><code>IsRateHolding(...)</code></li>
+<li><code>ToggleThrustMode()</code></li>
+<li><code>ToggleAttitudeMode()</code></li>
+<li><code>ToggleBurnMode()</code></li>
+<li><code>Handle(...)</code></li>
+</ul>
+<h3 id="burn-plan-management">Burn Plan Management<a class="headerlink" href="#burn-plan-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>CalculateNewFlightPlans(...)</code></li>
+<li><code>AddBurn(...)</code></li>
+<li><code>RemoveBurn(...)</code></li>
+<li><code>BurnUpdated(...)</code></li>
+</ul>
+<h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link">&para;</a></h2>
+<p>This class does not define any custom operators.</p>
 
 
 
@@ -1893,10 +2504,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
