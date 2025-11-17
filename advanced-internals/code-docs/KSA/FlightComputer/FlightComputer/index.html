@@ -2304,23 +2304,6 @@
 <p>This documentation page is not finished yet. Some sections or method pages may still be missing.</p>
 <p>Here is a complete <strong>Overview page</strong> you can paste directly after your existing header.</p>
 </div>
-<p>I follow your documentation style guide and keep it neutral, descriptive, and consistent with bool2-style overview pages.</p>
-<p>You already have:</p>
-<div class="highlight"><pre><span></span><code>&lt;sub&gt;&lt;sup&gt;Tested with: **KSA Version 2025.11.5.2819**&lt;/sup&gt;&lt;/sub&gt;
-# class KSA.FlightComputer
-&gt; **Namespace:** `KSA`  
-&gt; **Assembly:** `KSA.dll`
-
-The `FlightComputer` class manages all automated and semi-automated control logic for a vessel.
-It is responsible for *attitude control*, *burn planning and execution*, *manual &amp; pulse-mode RCS control*, and integrating navigation measurements to generate actuator outputs.
-
-A `FlightComputer` also tracks a vessel’s configuration (such as thruster authority, torque/force capability, and engine performance), allowing it to compute rotation rates, deadbands, flip times, and burn durations accurately.
-
-This class is typically owned by a `Vehicle` object and is updated once per simulation step.
-
-!!! warning &quot;Documentation Incomplete&quot;
-    This documentation page is not finished yet. Some sections or method pages may still be missing.
-</code></pre></div>
 <h2 id="code-example-optional">Code Example (Optional)<a class="headerlink" href="#code-example-optional" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1">// Accessing a vessel’s flight computer</span>
 <span class="kt">var</span><span class="w"> </span><span class="n">fc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">activeVessel</span><span class="p">.</span><span class="n">FlightComputer</span><span class="p">;</span>
