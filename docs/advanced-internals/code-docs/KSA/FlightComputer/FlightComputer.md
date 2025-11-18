@@ -10,10 +10,9 @@ A FlightComputer also tracks a vessel’s configuration (such as thruster author
 
 This class is typically owned by a Vehicle object and is updated once per simulation step.
 
+
 !!! warning "Documentation Incomplete"
     This documentation page is not finished yet. Some sections or method pages may still be missing.
-
-    Here is a complete **Overview page** you can paste directly after your existing header.
 
 
 ## Code Example (Optional)
