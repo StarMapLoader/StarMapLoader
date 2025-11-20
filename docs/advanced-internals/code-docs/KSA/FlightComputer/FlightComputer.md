@@ -15,7 +15,7 @@ This class is typically owned by a Vehicle object and is updated once per simula
     This documentation page is not finished yet. Some sections or method pages may still be missing.
 
 
-## Code Example (Optional)
+## Code Example
 
 ```csharp
 // Accessing a vessel’s flight computer
