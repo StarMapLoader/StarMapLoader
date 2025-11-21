@@ -1,4 +1,4 @@
-<sub><sup>Tested with: **KSA Version 2025.11.6.2829**</sup></sub>
+<sub><sup>Tested with: **KSA Version 2025.11.8.2847**</sup></sub>
 # class KSA.Astronomical
 
 > **Namespace:** `KSA`  
@@ -129,3 +129,9 @@ This is a list of some of the public methods in Astronomical.
 ## Operators
 
 This class does **not** define any custom operators.
+
+## Contributors
+
+Original Contributor(s):
+
+* MrJeranimo: 11/19/2025, Created the `Astronomical` page.
